@@ -1,3 +1,7 @@
+.sp {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -174,11 +178,32 @@ footer address {
 }
 
 @media screen and (max-width: 767px) {
+  .sp {
+    display: block;
+  }
+  
   header,
   .l-wrapper,
-  .pagetop,
   footer {
     width: 100%;
+  }
+  
+  .global-nav ul {
+    flex-wrap: wrap;
+  }
+  
+  .global-nav ul li {
+    width: 100%;
+  }
+  
+  .global-nav ul li:not(:last-child) {
+    border-right: none;
+    border-bottom: solid 1px #fff;
+  }
+  
+  .global-nav ul li:first-child a,
+  .global-nav ul li:last-child a {
+    border-radius: 0;
   }
   
   main,
@@ -187,7 +212,20 @@ footer address {
     width: 100%;
   }
   
+  main {
+    margin: 0 0 60px;
+  }
+  
   .l-contents {
     flex-wrap: wrap;
+  }
+  
+  .side-banner {
+    margin: 0 auto;
+    width: 230px;
+  }
+  
+  .side-banner:not(:last-child) {
+    margin: 0 auto 30px;
   }
 }
