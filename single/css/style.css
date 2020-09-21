@@ -158,6 +158,21 @@ header {
   width: calc(100% / 3);
 }
 
+.skill-icon {
+  border: solid 4px #f1b400;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  height: 150px;
+  line-height: 142px;
+  margin: 0 0 30px;
+  width: 150px;
+}
+
+.skill-icon-reverse {
+  transform: scaleX(-1);
+}
+
 .skill-title {
   font-size: 2rem;
   margin: 0 0 20px;
@@ -165,4 +180,21 @@ header {
 
 .skill-description {
   line-height: 2;
+}
+
+.l-contact {
+  padding: 110px 0 150px; 
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  margin: 0 0 10px;
+  padding: 15px;
+  width: 100%;
 }
