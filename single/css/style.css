@@ -193,8 +193,51 @@ header {
 
 .contact-form input[type=text],
 .contact-form textarea {
+  background-color: rgba(255, 255, 255, .05);
+  border: solid 1px rgba(255, 255, 255, .4);
+  border-radius: 0;
+  color: #fff;
   display: block;
-  margin: 0 0 10px;
+  outline: none;
   padding: 15px;
   width: 100%;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, .5) inset;
+}
+
+.contact-form input[type=text] {
+  margin: 0 0 10px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  margin: 0 0 40px;
+}
+
+.contact-form input[type=submit] {
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, .4);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, .6);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 200px;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, .05);
+}
+
+footer {
+  font-size: 1.3rem;
+  padding: 12px 0;
+}
+
+@media (max-width: 600px) {
+  
 }
